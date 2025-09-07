@@ -1,8 +1,8 @@
 import 'package:flutter/material.dart';
-import 'package:my_app/reposistory/screens/home/homescreen.dart';
 import 'package:my_app/reposistory/screens/cart/cartscreen.dart';
-import 'package:my_app/reposistory/screens/print/printscreen.dart';
 import 'package:my_app/reposistory/screens/category/categoryscreen.dart';
+import 'package:my_app/reposistory/screens/home/homescreen.dart';
+import 'package:my_app/reposistory/screens/print/printscreen.dart';
 import 'package:my_app/reposistory/widgets/uihelper.dart';
 
 class BottomNavScreen extends StatefulWidget {
@@ -27,18 +27,9 @@ class _BottomNavScreenState extends State<BottomNavScreen> {
     return Scaffold(
       body: IndexedStack(index: currentIndex, children: pages),
       bottomNavigationBar: BottomNavigationBar(
-        currentIndex: currentIndex,
-        onTap: (index) {
-          setState(() {
-            currentIndex = index;
-          });
-        },
-        type: BottomNavigationBarType.fixed,
-        selectedItemColor: Colors.green,
-        unselectedItemColor: Colors.grey,
         items: [
           BottomNavigationBarItem(
-            icon: UiHelper.CustomImage(img: "home 1.png"),
+            icon: Image.asset("assets/images/home 1.png"),
             label: "Home",
           ),
           BottomNavigationBarItem(
@@ -47,13 +38,20 @@ class _BottomNavScreenState extends State<BottomNavScreen> {
           ),
           BottomNavigationBarItem(
             icon: UiHelper.CustomImage(img: "category 1.png"),
-            label: "Category",
+            label: "Categories",
           ),
           BottomNavigationBarItem(
             icon: UiHelper.CustomImage(img: "printer 1.png"),
             label: "Print",
           ),
         ],
+        type: BottomNavigationBarType.fixed,
+        currentIndex: currentIndex,
+        onTap: (index) {
+          setState(() {
+            currentIndex = index;
+          });
+        },
       ),
     );
   }
