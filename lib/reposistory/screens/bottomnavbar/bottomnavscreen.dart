@@ -16,10 +16,10 @@ class _BottomNavScreenState extends State<BottomNavScreen> {
   int currentIndex = 0;
 
   List<Widget> pages = [
-    const HomeScreen(),
+    HomeScreen(),
     CartScreen(),
     CategoryScreen(),
-    const PrintScreen(),
+    PrintScreen(),
   ];
 
   @override
