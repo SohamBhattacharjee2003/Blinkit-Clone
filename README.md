@@ -118,30 +118,6 @@ Please include screenshots or GIFs with UI changes.
 * Add search suggestions and advanced filtering.
 * Add localization (i18n) and theming support.
 
----
-
-## Known Issues
-
-* Placeholder images and demo data are used. Replace with production-quality assets.
-* Payment flow is mocked — integrate a payment gateway for production.
-
----
-
-## License
-
-This project is available under the MIT License. See `LICENSE` for details.
-
----
-
-## Contact
-
-**Soham Bhattacharjee** — *Maintainer*
-
-* GitHub: [SohamBhattacharjee2003](https://github.com/SohamBhattacharjee2003)
-* Email: `your-email@example.com`
-
----
-
 ## Tips to make README even better
 
 * Add a short GIF showing the main app flow (home → product → cart → checkout).
